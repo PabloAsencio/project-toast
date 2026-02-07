@@ -39,9 +39,9 @@ Several students have reported getting an error like this, when saving files:
 
 > TypeError: Cannot destructure property 'handleToastAddition' of '(0 , \_reactDefault.default).useContext(...)' as it is undefined
 
-Frustratingly, I haven't been able to reproduce this error, so I don't really know what's causing it, but **it isn't really anything you have to worry about.** It only happens in development, when saving files. This error won't stop you from sharing your projects with the world, it's just a bit annoying while developing.
+This can happen if you try to pull a value from context when that value hasn’t been provided. Double-check that your Provider component is wrapping around the entire application.
 
-This issue also appears to be specific to Parcel, the bundler we're using in this project. I chose Parcel because it is the most lightweight option I know, to quickly get a React project working, but in the real world, I recommend using Next.js. We explore Next later in this course.
+That said, I’ve also heard from some students who have said that they get this error when saving files, despite the fact that everything works correctly when refreshing the page. This appears to be a bug with Parcel, the bundler we’re using in this project. **As annoying as it is, I would encourage you not to worry about this.** In real-world projects, I’d recommend using a full-stack framework like Next.js or React Router 7+, where you won’t run into this issue.
 
 ### Other issues
 
