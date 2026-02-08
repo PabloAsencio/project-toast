@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import React from 'react';
 
 import Toast from '../Toast';
 import {ToastContext} from '../ToastProvider';
